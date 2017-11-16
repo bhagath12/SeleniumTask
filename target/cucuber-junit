@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="2" time="235.9185">
+<testcase classname="Test to Order a TShirt &amp; Verify the Order in order history" name="Order a TShirt and Verify item exist in Order History" time="137.203842">
+<system-out><![CDATA[Given user enters the URL...................................................passed
+When user clicks on sign in.................................................passed
+When user enters userName as "automation.practice@gmail.com" and password as "Automation123".passed
+And user clicks on T-Shirts.................................................passed
+And user selects a T-Shirt..................................................passed
+When user clicks on AddToCart...............................................passed
+And user clicks on Proceed to checkout button...............................passed
+When user accepts terms and conditions......................................passed
+And user clicks on Proceed to checkout......................................passed
+And select payment type as PayByCheck.......................................passed
+When user confirms the order................................................passed
+When user clicks on my orders...............................................passed
+And user clicks on order reference..........................................passed
+Then verity the "Faded Short Sleeve T-shirts - Color : Orange, Size : S" exist in order history.passed
+]]></system-out>
+</testcase>
+<testcase classname="Update Personal Information(FirstName) in My Account. &amp; Further verify FirstName field appears updated." name="Test to update personal information" time="98.714658">
+<system-out><![CDATA[Given user enters the URL...................................................passed
+When user clicks on sign in.................................................passed
+When user enters userName as "automation.practice@gmail.com" and password as "Automation123".passed
+When user clicks on my personal information.................................passed
+And user updates first name as "Peter"......................................passed
+And user enters current password as "Automation123".........................passed
+When user clicks on save button.............................................passed
+When user clicks on back to your account....................................passed
+When user clicks on my personal information.................................passed
+Then verify first name field appears updated as "Peter".....................passed
+]]></system-out>
+</testcase>
+</testsuite>
